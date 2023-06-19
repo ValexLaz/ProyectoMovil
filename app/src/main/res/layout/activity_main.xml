@@ -1,162 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AGREGAR UNA MATERIA"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dias de la materia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.352" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ingrese el numero de periodos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.203"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Numeo de periodo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.696" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nota"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.649"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.696" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Horario"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nota de aprobacion"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.143"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editxtNombreMateria"
-        android:layout_width="264dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="72dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Nombre de la materia"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="124dp" />
-
-    <EditText
-        android:id="@+id/editxtNumeroPeriodos"
-        android:layout_width="110dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="243dp"
-        tools:layout_editor_absoluteY="179dp" />
-
-    <EditText
-        android:id="@+id/editxtTime"
-        android:layout_width="64dp"
-        android:layout_height="35dp"
-        android:ems="10"
-        android:inputType="time"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="285dp" />
-
-    <EditText
-        android:id="@+id/editPeriodo"
-        android:layout_width="64dp"
-        android:layout_height="35dp"
-        android:ems="10"
-        android:inputType=""
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="489dp" />
-
-    <EditText
-        android:id="@+id/editNotaperiodo"
-        android:layout_width="64dp"
-        android:layout_height="35dp"
-        android:ems="10"
-        android:inputType="time"
-        tools:layout_editor_absoluteX="313dp"
-        tools:layout_editor_absoluteY="489dp" />
-
-    <EditText
-        android:id="@+id/editxtNotaAprobacion"
-        android:layout_width="71dp"
-        android:layout_height="44dp"
-        android:ems="10"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="199dp"
-        tools:layout_editor_absoluteY="343dp" />
-
-    <CheckBox
-        android:id="@+id/checkBoxPeriodo"
-        android:layout_width="318dp"
-        android:layout_height="43dp"
-        android:text="Los periodos no tienen el mismo valor "
-        tools:layout_editor_absoluteX="45dp"
-        tools:layout_editor_absoluteY="411dp" />
 
     <Button
-        android:id="@+id/btnAgregarMateria"
-        android:layout_width="204dp"
-        android:layout_height="40dp"
-        android:text="Agregar Materia"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="576dp" />
+        android:id="@+id/btnCrear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear DB" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaMaterias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
